@@ -49,15 +49,7 @@ module.exports = {
             }
         ]
     },
-    devServer: {
-        static: {
-            directory: path.join(__dirname, 'build'),
-        },
-        compress: true,
-        proxy: {
-            '/api/getData/:username': 'http://localhost:4000/'
-        }
-    },
+    devServer: {},
     resolve: {
         extensions: ["*", ".js", ".jsx"]
     },
